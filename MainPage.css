@@ -266,7 +266,7 @@ padding: 0;
     display: none;
   }
   #hellopreloader_preload {
-	  display:none;
+	  display: none;
   }
 body.header-fixed header {
  display: none;
