@@ -170,12 +170,7 @@ width: 600px;
     filter: alpha(Opacity=70); /* Прозрачность в IE */
 }
 
-/*.news article {
 
-          flex-grow: 1;
-         flex-shrink: 0;
-           flex-basis: 200px;
-          padding: 1rem;} */
 
 .footer {
   padding: 1rem;
@@ -187,7 +182,7 @@ width: 600px;
 }
 
 
-@media (max-width: 800px) {
+@media all and (max-width: 800px) {
   .caption {
     font-size: 30px;
     letter-spacing: 20px;
