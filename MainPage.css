@@ -232,7 +232,7 @@ margin-bottom: 40px;
   
 
 }
-@media (max-width: 500px) {
+@media screen (max-width: 500px) {
   
 .header {
 flex-direction: column;
