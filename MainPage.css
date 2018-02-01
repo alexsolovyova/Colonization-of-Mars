@@ -10,7 +10,8 @@
 
 html, body {
   height: 100%;
- font-family: 'Cormorant Garamond', serif;  
+
+ font-family: 'Cormorant Garamond', serif; 
   background-color: black;
 }
 
@@ -22,21 +23,6 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-}
-
-
-
-#hellopreloader_preload {
-    display: block;
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*min-width: 1000px;*/
-    background: black url('http://hello-site.ru/main/images/preloads/rings.svg') center center no-repeat;
-    background-size: 92px;
 }
 
 .header {
@@ -86,12 +72,14 @@ body.header-fixed header {
       padding: 20px 0;
       display: flex;
       justify-content: center;
+
       flex-direction: row;}
 
 .navbar ul  {
       flex: 1;
       display: flex;
   justify-content: space-around;
+ 
       margin: 0;
       list-style: none inside;
       min-height: 100%;
@@ -101,11 +89,12 @@ body.header-fixed header {
        display: flex;
         flex-direction: row;
         justify-content: center;
+
   margin-top: 12px;
     font-size: 15px;
 }
-nav a:hover {
-color: blue;}
+
+
 
 main {
 
@@ -129,25 +118,54 @@ main {
       }
 
 .news {
-              background:black;
+  
+        padding-top: 20px;
+    background:black;
               color: white;
-              padding: 1rem .5rem;
+
        display: flex;
-      flex-wrap: wrap;
-            justify-content: space-around;
-        align-content: flex-start;
-      align-items: flex-start;
-        min-height: 15rem;
+flex-wrap: wrap;
+     
+            justify-content: center;
+       
+      align-items: center;
+  
 }
 
 
 .news img {
-   opacity:0.6;
+ -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  width: 450px;
+    height:350px;
+    
+ 
+ 
 }
 
-.news img:hover { opacity:1; }
+.news img:hover { -webkit-filter: grayscale(0);
+	filter: grayscale(0); opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;}
 
-
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 .footer {
   padding: 1rem;
@@ -168,7 +186,7 @@ main {
 
 
 .cust-quotes {
-
+  
   width: 640px;
   height:100px;
   position:relative;
@@ -209,7 +227,7 @@ main {
   font-size:24px;
   font-weight:normal;
   font-style:italic;
-  color:#353535;
+  color: white;
   line-height: 30px;
   margin-bottom: 10px;
 }
@@ -224,15 +242,16 @@ main {
 #testimonials {
 
 background-color: black;
-  margin-left: 200px;
+
 margin-bottom: 40px;
   padding: 5%;
-  width:940px;
+  margin-left: 20%;
+
   
   
 
 }
-@media all and (max-width: 500px) {
+@media (max-width: 600px) {
   
 .header {
 flex-direction: column;
@@ -265,9 +284,7 @@ padding: 0;
   {
     display: none;
   }
-  #hellopreloader_preload {
-	  display:none;
-  }
+  
 body.header-fixed header {
  display: none;
 }
