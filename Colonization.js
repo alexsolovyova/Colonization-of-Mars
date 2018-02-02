@@ -1,22 +1,21 @@
-
-$(document).ready(function(){
-  $(window).scroll(function(){
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop > 49) {
-        $('body').addClass('header-fixed');
-    } else {
-        $('body').removeClass('header-fixed');
-    }
-
-    var topOffset = $('#demosection2').offset().top;
-    var headerHeight = $('#topnav').height();
-    var transitionPoint = topOffset - headerHeight;
-    if (scrollTop > transitionPoint) {
-        $('#topnav').addClass('alt-header');
-    } else {
-        $('#topnav').removeClass('alt-header');
-    }
-  });
+var ctrl = new ScrollMagic.Controller({
+  globalSceneOptions: {
+    triggerHook: 'onLeave'
+  }
 });
 
+$("section").each(function() {
+  new ScrollMagic.Scene({
+    triggerElement: this
+  })
+    .setPin(this)
+    .addTo(ctrl);
+});
 
+var wh = window.innerHeight;
+ 
+new ScrollMagic.Scene({
+  offset: wh*3
+})
+.setClassToggle("section#four", "is-active")
+.addTo(ctrl);
