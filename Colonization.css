@@ -106,7 +106,9 @@ body.header-fixed header {
 nav a:hover {
 color: blue;}
 
-
+p {
+	line-height: 30px;
+}
 main {  flex: 8; }
 
 .footer {  flex: 1;}
@@ -130,7 +132,7 @@ main {  flex: 8; }
       }
 
 .news {
-           position: relative;
+         
       color: white;
 text-align: justify;
       display: flex;
@@ -180,7 +182,7 @@ width: 800px;}
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .caption {
     font-size: 30px;
     letter-spacing: 20px;
@@ -217,4 +219,95 @@ padding: 0;
   }
   body.header-fixed header {
  display: none;
+}}
+
+
+.spiralContainer {
+
+ padding: 10%;
+
+  width: 800px;
+  height:800px;
+  overflow:hidden;
+
+    -webkit-animation: spin 3s linear 0s infinite reverse;
+  -moz-animation: spin 3s linear 0s infinite reverse;  
+  -ms-animation: spin 3s linear 0s infinite reverse;
+  -o-animation: spin 3s linear 0s infinite reverse;
+  animation: spin 15s linear 0s infinite reverse;
+  
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;  
+  animation-play-state: running;
+
+}
+.spiral {
+  width:200px;
+  height:200px;
+  border-radius: 10%;
+  background-image: url(https://www.mars-one.com/images/uploads/Astronaut_EVA2.png);
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  
+  
+  -webkit-animation: spin 6s linear 0s infinite normal;
+  -moz-animation: spin 6s linear 0s infinite normal;
+  -ms-animation: spin 6s linear 0s infinite normal;
+  -o-animation: spin 6s linear 0s infinite normal;
+  animation: spin 6s linear 0s infinite normal;
+}
+.spiralContainer:hover {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+@keyframes spin {
+ 
+   
+      0%   {transform: rotate(360deg);  left:0px; top:400px;}
+    25%  {right: 80%; top: 30%;}
+    50%  { left:40%; top:30%;}
+    75%  {right:20%; top:30%;}
+    100% {transform: rotate(0deg);  left:0px; top:0px;}
+}
+
+
+
+
+
+@-webkit-keyframes spin {
+  
+      0%   {transform: rotate(360deg);  left:0px; top:400px;}
+    25%  {right: 80%; top: 30%;}
+    50%  { left:40%; top:30%;}
+    75%  {right:20%; top:30%;}
+    100% {transform: rotate(0deg);  left:0px; top:0px;}
+}
+@-ms-keyframes spin {
+ 
+      0%   {transform: rotate(360deg);  left:0px; top:400px;}
+    25%  {right: 80%; top: 30%;}
+    50%  { left:40%; top:30%;}
+    75%  {right:20%; top:30%;}
+    100% {transform: rotate(0deg);  left:0px; top:0px;}
+}
+@-moz-keyframes spin {
+   
+      0%   {transform: rotate(360deg);  left:0px; top:400px;}
+    25%  {right: 80%; top: 30%;}
+    50%  { left:40%; top:30%;}
+    75%  {right:20%; top:30%;}
+    100% {transform: rotate(0deg);  left:0px; top:0px;}
+}
+@-o-keyframes spin {
+ 
+      0%   {transform: rotate(360deg);  left:0px; top:400px;}
+    25%  {right: 80%; top: 30%;}
+    50%  { left:40%; top:30%;}
+    75%  {right:20%; top:30%;}
+    100% {transform: rotate(0deg);  left:0px; top:0px;}
 }
