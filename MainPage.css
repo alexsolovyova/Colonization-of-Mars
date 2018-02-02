@@ -53,6 +53,9 @@ body.header-fixed header {
   text-decoration: none;
 
 }
+nav a:hover {
+color: blue;
+}
 .header .logo {
  flex: 4;
 }

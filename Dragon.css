@@ -63,7 +63,8 @@ body.header-fixed header {
   text-decoration: none;}
 
 nav a:hover {
-color: blue;}
+color: blue;
+text-decoration: none;}
 
 .header .logo {
  flex: 4;}
@@ -143,6 +144,7 @@ text-align: justify;
 	    font-family: 'Cormorant Garamond', serif;
        flex-direction: column;
       justify-content: flex-start;
+	 
 
 }
 
@@ -159,7 +161,7 @@ text-align: justify;
 
   .carousel {
             height: 450px;
-            background: #7291af;
+            background: linear-gradient(90deg, #000000, #2e6796, #000000);
       width: 100%;
         }
         
@@ -183,7 +185,75 @@ text-align: justify;
             weight: 400;
         }
         
-    
+    .image {
+  position: relative;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.image img {
+  width: 100%;
+  min-height: 100%;
+  display: block;
+}
+.image .title {
+  position: absolute;
+  margin-top: -200px;
+  left: 30px;
+  color: #fff;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  font-family: 'Noto Sans', sans-serif;
+}
+.image .description {
+  position: absolute;
+  display: none;
+  left: 30px;
+  right: 30px;
+  color: #fff;
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+}
+.image:hover {
+  background: #333;
+}
+.image:hover img {
+  opacity: .3;
+}
+.image:hover .description {
+  display: block;
+  -webkit-animation-name: slide-up;
+          animation-name: slide-up;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+@-webkit-keyframes slide-up {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 15%;
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 15%;
+    opacity: 1;
+  }
+}
+
         
 
 @media (max-width: 500px) {
@@ -194,7 +264,11 @@ padding: 0;
   
 
   }
+.description {
+display: none; }
 
+.image {
+display: none} 
 .navbar  {
     
       padding: 0;
