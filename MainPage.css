@@ -200,7 +200,7 @@ flex-wrap: wrap;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  font-size: 14px;
+  font-size: 25px;
   
   opacity: 0;
   z-index: 0;
@@ -224,7 +224,7 @@ flex-wrap: wrap;
 }
 .cust-quotes blockquote p{
    
-  font-size:24px;
+  font-size:35px;
   font-weight:normal;
   font-style:italic;
   color: white;
