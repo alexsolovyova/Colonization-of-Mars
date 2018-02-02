@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 
 * {
   margin: 0;
@@ -10,7 +9,7 @@
 
 html, body {
   height: 100%;
-  font-family: 'Cormorant Garamond', serif;
+font-family: 'Alegreya', serif;
   background-color: white;
 }
 
@@ -165,14 +164,7 @@ text-align: justify;
         }
         
               
-      .carousel   h2 {
-            
-            font-size: 38px;
-            margin-top: 150px;
-            color: rgba(0,0,0,0.6);
-            font-family: Bree Serif, serif;
-            weight: 700;
-        }
+  
 
       .carousel   h3 {
             font-size: 24px;
@@ -184,7 +176,7 @@ text-align: justify;
         
      .carousel   p {
             font-size: 18px;
-            margin-top: 10px;
+            margin-top: 200px;
             color: black;
             font-family: 'EB Garamond', serif;
             font-style: italic;

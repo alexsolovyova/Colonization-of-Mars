@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 * {
@@ -11,7 +11,7 @@
 html, body {
   height: 100%;
 
-font-family: 'Cormorant Garamond', serif;  
+font-family: 'Alegreya', serif;
   background-color: white;
 }
 
@@ -25,7 +25,7 @@ font-family: 'Cormorant Garamond', serif;
 
 .caption {
   font-size: 60px;
-   font-family: 'Open Sans Condensed', sans-serif; 
+    font-family: 'Open Sans Condensed', sans-serif; 
 letter-spacing: 60px;
   color: black;
 position: absolute;}
@@ -163,9 +163,9 @@ text-align: justify;
 position: absolute;
      padding: 30px; 
     background: black;
-width: 600px;
+width: 800px;
 
- 
+   font-size: 17px;
     opacity: 0.7; 
     filter: alpha(Opacity=70); /* Прозрачность в IE */
 }
