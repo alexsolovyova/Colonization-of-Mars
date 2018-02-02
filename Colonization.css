@@ -180,7 +180,7 @@ width: 800px;}
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .caption {
     font-size: 30px;
     letter-spacing: 20px;
@@ -188,7 +188,9 @@ width: 800px;}
   
   .block {
     display: none;
-  }
+} 
+
+
 
 .header {
 flex-direction: column;
