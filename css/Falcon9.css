@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 * {
@@ -10,21 +10,24 @@
 
 html, body {
   height: 100%;
-font-family: 'Cormorant Garamond', serif;
+
+font-family: 'Alegreya', serif;
   background-color: white;
 }
 
-.news img {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+    
+    .news img {
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+
 
 
 .caption {
   font-size: 60px;
+    font-family: 'Open Sans Condensed', sans-serif; 
 letter-spacing: 60px;
   color: black;
-    font-family: 'Open Sans Condensed', sans-serif; 
 position: absolute;}
 
 img {
@@ -36,8 +39,6 @@ img {
   flex-direction: column;
   min-height: 100%;
 }
-
-
 
 
 .header {
@@ -55,6 +56,7 @@ img {
   z-index: 100;
   position: fixed;}
 
+
 body.header-fixed header {
   position: fixed;
 
@@ -65,25 +67,18 @@ body.header-fixed header {
 }
 .header a {
   color: white;
-  text-decoration: none;
-
-}
-.header .logo {
- flex: 4;
-}
-.header nav {
- flex: 6;
- 
-}
-
-.logo {
-  margin: 0;
-
- 
-}
+  text-decoration: none;}
 
 nav a:hover {
 color: blue;}
+
+.header .logo {
+ flex: 4;}
+
+.header nav {
+ flex: 6;}
+
+
 
 .navbar  {
       height: 100%;
@@ -108,7 +103,6 @@ color: blue;}
   margin-top: 12px;
     font-size: 15px;
 }
-
 main {  flex: 8; }
 
 .footer {  flex: 1;}
@@ -126,7 +120,7 @@ main {  flex: 8; }
         background-color: black;
         position: relative;
         font-size: 50px;
-         
+         min-height: 300px;
       
 
       }
@@ -168,12 +162,13 @@ text-align: justify;
 position: absolute;
      padding: 30px; 
     background: black;
-width: 600px;
+width: 800px;
 
- 
+   font-size: 17px;
     opacity: 0.7; 
     filter: alpha(Opacity=70); /* Прозрачность в IE */
 }
+
 
 
 .footer {
@@ -186,9 +181,8 @@ width: 600px;
 }
 
 
-
-@media all and (max-width: 700px) {
-    .caption {
+@media all and (max-width: 800px) {
+  .caption {
     font-size: 30px;
     letter-spacing: 20px;
   }
@@ -196,12 +190,13 @@ width: 600px;
   .block {
     display: none;
   }
-
+}
+  
+@media (max-width: 500px) {
 .header {
 flex-direction: column;
 padding: 0;
   position: static;
-
   
 
   }
@@ -216,12 +211,12 @@ padding: 0;
 
 .navbar ul  {
      
-     flex-direction: column;
-  padding-bottom: 10px;}
+     flex-direction: column;}
   
   .info {
     margin-top: -100px;
   }
   body.header-fixed header {
  display: none;
+}
 }
