@@ -173,7 +173,7 @@ text-align: justify;
       .carousel   h3 {
             font-size: 24px;
             margin-top: 10px;
-            color: black;
+            color: white;
             font-family:Roboto, sans-serif;
           
         }
@@ -181,9 +181,10 @@ text-align: justify;
      .carousel   p {
             font-size: 18px;
             margin-top: 200px;
-            color: black;
+            color: white;
             font-family: 'EB Garamond', serif;
             font-style: italic;
+			padding: 20px;
           
         }
         
